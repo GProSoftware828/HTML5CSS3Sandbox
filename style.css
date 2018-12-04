@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: arial; /* myFont */
+  background: url(bkgd.jpg);
+}
+
+#container {
+  width: 90%;
+  height: 90%;
+  background: #269699;
+  margin: 0 auto;
+  border: 2px solid black;
+  box-shadow: 0px 5px 5px gray;
+}
+  header {
+    /*width: 100%; */
+    padding: 30px;
+    background: #983030;
+    color: white;
+    /*font-family: myFont;
+
+    /*transform: rotate(50deg); */
+  }
+
+  @font-face {
+    /*src: url(Ubuntu-L.ttf) /*dowloaded source code for font in directory */;
+   /* font-family: myFont; */
+  }
+
+    header h1 {
+      margin-left: 10px;
+    }
+nav {}
+    nav ul {
+      background: #8A1C1C;
+      padding: 10px;
+    }
+      nav li {
+        list-style: none;
+        float: left;
+        margin: 10px;
+        color: white;
+      }
+      nav li:hover {
+        background: black;
+        cursor: pointer;
+      }
+
+section {
+  width: 70%;
+  height: 90%;
+  /* background: white; - why does this overrie container color */
+  float: left;
+}
+  article {
+    background: #27116F;
+    border-bottom: 3px solid black;
+    /*width: 60%; */
+    margin: 10px 10px 10px 10px;
+  }
+    article h2 {
+      font-size: 18px;
+      /* background: #8A1C1C; overrides article */
+      padding: 10px;
+    }
+    article p {
+      margin: 10px 10px 10px 10px;
+    }
+
+    #meta {
+      color: gray;
+      margin: 10px 0px 0px 10px;
+    }
+aside {
+  float: left;
+  width: 30%;
+}
+#side-top {
+  /*background:white; */
+}
+    #side-top h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 10px;
+  }
+  #latest-posts-list {
+    padding: 0px;
+  }
+    .latest-posts {
+      padding: 10px;
+      width: 85%;
+      height: 10%;
+      background: red;
+      margin: 10px;
+      border: 3px solid black;
+    }
+
+#side-bottom {}
+    #side-bottom h1 {
+      text-align: center;
+      text-decoration: underline;
+      font-size: 20px;
+      padding: 10px;
+    }
+    #side-bottom form {}
+      #side-bottom form input[type='email']{
+          width: 85%;
+          height: 10%;
+        }
+      #side-bottom form input[type='submit']{
+          width: 85%;
+          height: 10%;
+          margin-top: 10px;
+          background: orange;
+        }
+    #reg-form {
+      margin: 10px;
+    }
+      #reg-form table {
+        width: 60%;
+        background: aqua;
+      }
+        #reg-form table tr {
+          height: 60%;
+        }
+          #reg-form table td {}
+            #reg-form input, #reg-form select {
+              height: 50%;
+              width: 80%;
+            }
+
+footer {
+  background: #983030;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 5px 5px 5px gray;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* gives a ... */
+}
+
+.canvas1 {
+  height:30%;width:40%;border:3px solid black;
+}
+
+.canvas2 {
+  height:30%;width:40%;border:3px solid black;
+  background: radial-gradient(red 50%, green 65%, orange);
+}
+
+.canvas3 {
+  height:30%;width:40%;border:3px solid black; background: white;
+}
+
+.canvas5 {
+  height:30%;width:40%;border:3px solid black; 
+}
+
+.canvas6 {
+  height:30%;width:40%;border:3px solid black; 
+}
+
+.canvas7 {
+  height:30%;width:40%;border:3px solid black; 
+}
+
+.canvas8 {
+  height:30%;width:40%;border:3px solid black; 
+}
+
+.canvas9 {
+  height:30%;width:40%;border:3px solid black; 
+}
+
+/********* CSS3 ***********/
+
+#border-radius {
+  background: linear-gradient(to bottom left, #8A1C1C, black); /* or 10deg for fade
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 10px; /* rounds edges */
+  box-shadow: inset -20px 10px 10px pink; /* x y thickness */
+}
+
+#rotate {
+  background: linear-gradient(to bottom left, #8A1C1C, black); /* or 10deg for fade */
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 10px; /* rounds edges */
+  box-shadow: inset -20px 10px 10px pink; /* x y thickness */
+
+  transform: rotate(50deg); /* rotateX from x or y or z coordinate only */
+}
+
+#translate {
+  background: linear-gradient(to bottom left, #8A1C1C, black); /* or 10deg for fade */
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 10px; /* rounds edges */
+  box-shadow: inset -20px 10px 10px pink; /* x y thickness */
+
+  transform: translate(50px, 100px); /* location in reference to parent class */
+}
+
+#scale {
+  background: linear-gradient(to bottom left, #8A1C1C, black); /* or 10deg for fade */
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 10px; /* rounds edges */
+  box-shadow: inset -20px 10px 10px pink; /* x y thickness */
+
+  transform: scale(2);
+}
+
+#skew {
+  background: linear-gradient(to bottom left, #8A1C1C, black); /* or 10deg for fade */
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 10px; /* rounds edges */
+  box-shadow: inset -20px 10px 10px pink; /* x y thickness */
+  transform: skew(20deg, 20deg); /*skewX, skewY for one coordinate */
+}
+
+#transition {
+  background: linear-gradient(to bottom left, #8A1C1C, black); /* or 10deg for fade */
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 10px; /* rounds edges */
+  box-shadow: inset -20px 10px 10px pink; /* x y thickness */
+  /*transform: skew(20deg, 20deg); /*skewX, skewY for one coordinate */
+  transition: background 2s; /*Transition current class into next hover class in 2 seconds */
+}
+
+/* How can you add new elements to a transition, poss. JS? */
+
+#transition:hover {
+  background: green; /* or 10deg for fade */
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 10px; /* rounds edges */
+  box-shadow: inset -20px 10px 10px pink; /* x y thickness */
+  transform: skew(20deg, 20deg); /*skewX, skewY for one coordinate */
+}
+
+#anim1 {
+  background: linear-gradient(to bottom left, #8A1C1C, black); /* or 10deg for fade */
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 10px; /* rounds edges */
+  box-shadow: inset -20px 10px 10px pink; /* x y thickness */
+  animation: animation1 2s; /* on page load */
+}
+
+@keyframes animation1 {
+  from{background: silver}
+  to{background: black}
+}
+
+#anim2 {
+  background: linear-gradient(to bottom left, #8A1C1C, black); /* or 10deg for fade */
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 10px; /* rounds edges */
+  box-shadow: inset -20px 10px 10px pink; /* x y thickness */
+  animation: animation2 2s, 10s; /* 10s doesn't repspond- it's speed on onload, not time for launch */
+}
+
+@keyframes animation2 {
+  0% {width: 200px;
+      background: silver;
+  }
+  50% {width: 300px;
+      background: aqua;
+  }
+  100% {width: 200px;
+        background: maroon;
+  }
+}
+
+#anim3 {
+  background: linear-gradient(to bottom left, #8A1C1C, black); /* or 10deg for fade */
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 10px; /* rounds edges */
+  box-shadow: inset -20px 10px 10px pink; /* x y thickness */
+  animation-timing-function: linear;
+  animation-iteration-count: 3; /* not responsive in Safari or Chrome */
+  animation-delay: 2s; /* not responsive in Safari or Chrome */
+  animation: animation3 5s;
+}
+
+@keyframes animation3 {
+  0% {
+    border-radius: 0;
+    margin-left: 10px;
+  }
+  50% {
+    border-radius: 100px;
+    margin-left: 200px;
+  }
+  100% {
+    border-radius: 0;
+    margin-left: 10px;
+  }
+}
+
+#box-sizing {
+  background: white;
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 10px; /* rounds edges */
+  border: 3px solid black;
+  box-shadow: inset -20px 10px 10px pink; /* x y thickness */
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 20px;
+}
+
+#multi-columns {
+  background: white;
+  width: 500px;
+  height: 200px; /* research how to fit the canvas to the text, or the element */
+  border: 3px solid white;
+  border-radius: 10px; /* rounds edges */
+  border: 3px solid black;
+  box-shadow: inset -20px 10px 10px blue; /* x y thickness */
+  margin: 20px;
+  padding: 5px;
+  column-count: 2; /* if doesn't work use -webkit-column-count */
+  column-gap: 20px;
+  column-rule-style: dashed;
+  column-rule-width: 1px;
+  column-rule-color: grey;
+  column-width: 36%; /* not responsive */
+}

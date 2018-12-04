@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>HTML5/CSS3</title>
+</head>
+
+<body>
+<div id="container">
+  <header><h1>The Main Heading</h1></header>
+  <nav>
+    <ul>
+      <a href="index.html"><li>Home</li></a>
+      <li>Software</li>
+      <li>Music</li>
+      <li>Articles</li>
+      <li>Contact Us</li>
+      <div style="clear:both;"></div>
+    </ul>
+  </nav>
+  <section>
+    <form id="reg-form" novalidate>
+      <fieldset>
+        <legend>The Form</legend>
+      <table>
+        <tr>
+          <td>
+            Your Images
+          </td>
+          <td>
+            <input type="file" multiple>
+          </td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td><input type="text" required placeholder="Your Full Name"></td>
+        </tr>
+        <tr>
+          <td>Email Address</td>
+          <td><input type="email" required placeholder="Email?" autofocus></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" required></td>
+        </tr>
+        <tr>
+          <td>Birthday</td>
+          <td><input type="date" max="1997-04-12" max="1928-04-12" required></td>
+        </tr>
+        <tr>
+          <td>Time</td>
+          <td><input type="time" max="1997-04-12" max="1928-04-12" required></td>
+        </tr>
+        <tr>
+          <td>Date/Time</td>
+          <td><input type="datetime-local" max="1997-04-12" max="1928-04-12" required></td>
+        </tr>
+        <tr>
+          <td>Week</td>
+          <td><input type="week" max="1997-04-12" max="1928-04-12" required></td>
+        </tr>
+        <tr>
+          <td>Month</td>
+          <td><input type="month" max="1997-04-12" max="1928-04-12" required></td>
+        </tr>
+        <tr>
+          <td>Experience (In Numbers)</td>
+          <td><input type="number" max="10" min="2" required</td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>
+          <select required>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Marital Status</td>
+          <td>
+            <select required>
+              <option>Single</option>
+              <option>Married</option>
+              <option>Divorce</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Your Skills</td>
+          <td>
+            <input list="skills">
+            <datalist id="skills">
+              <option value="HTML5">HTML5</option>
+              <option value="CSS3">CSS3</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="Ruby on Rails">Ruby on Rails</option>
+              <option value=".ASP">.ASP</option>
+              <option value="Node.js">Node.js</option>
+              <option value="C++">C++</option>
+              <option value="AJAX">AJAX</option>
+              <option value="I.I.S./FileZilla/Domain Hosting">I.I.S./FileZilla/Domain Hosting</option>
+              <option value="WordPress">WordPress</option>
+            </datalist>
+            </input>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button>Submit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Choose a Color</td>
+          <td><input type="color"></td>
+        </tr>
+        <tr>
+          <td>Salary Expectations <br> 65,000 to 135,000</td>
+          <td><input type="range" min="65000" max="135000" value="100000" step="5000"></td>
+        </tr>
+      </table>
+    </fieldset>
+    </form>
+  </section>
+  <aside>
+    <div id="side-top">
+      <h1>latest posts</h1>
+      <div id="latest-posts-list">
+        <div class="latest-posts">First Post Title</div>
+        <div class="latest-posts">First Post Title</div>
+        <div class="latest-posts">First Post Title</div>
+        <div class="latest-posts">First Post Title</div>
+      </div>
+    </div>
+    <div id="side-bottom">
+      <h1>News Letter</h1>
+      <form>
+        <input type="email">
+        <input type="submit">
+      </form>
+    </div>
+  </aside>
+  <div style="clear:both"></div>
+  <footer>&copy; 2018 George Payne</footer>
+  </div>
+</div>
+</body>
+
+</html>

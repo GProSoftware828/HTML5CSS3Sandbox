@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>HTML5/CSS3</title>
+</head>
+
+<body>
+<div id="container">
+  <header><h1>The Main Heading</h1></header>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Software</li>
+      <li>Music</li>
+      <li>Articles</li>
+      <a href="registration.html"><li>Contact Us</li></a>
+      <div style="clear:both;"></div>
+    </ul>
+  </nav>
+
+  <section>
+    <article>
+      <h2>First Post Title</h2>
+      <div id="meta">3 Dec 18 | Author Payne | Article</div>
+      <div id="border-radius"></div>
+    </article>
+    <article>
+        <h2>First Post Title</h2>
+        <div id="meta">3 Dec 18 | Author Payne | Article</div>
+        <p>This is the first post now.This is the first post now.
+            This is the first post now.This is the first post now.
+            This is the first post now.This is the first post now.
+            This is the first post now.This is the first post now.
+        </p>
+      </article>
+      <article>
+          <h2>First Post Title</h2>
+          <div id="meta">3 Dec 18 | Author Payne | Article</div>
+          <canvas id="canvas1"></canvas>
+      </article>
+      <article>
+          <h2>Details Tag</h2>
+          <div id="meta">3 Dec 18 | Author Payne | Article</div>
+          <details>
+            <summary>Click to View the Details</summary>
+            <p>There is a lot of information from our database.</p>
+            <meter value="20" min="0" max="30"></meter>
+            <progress value="50" max="100"></progress> <!--Only in Firefox-->
+          </details>
+      </article>
+      <article>
+          <h2>Dialogue Tag</h2>
+          <div id="meta">3 Dec 18 | Author Payne | Article</div>
+          <p>There&apos;s a lot of <mark>great</mark>information from our <dialogue open>database.</dialogue></p>
+      </article>
+      <article>
+          <h2>Creating a Line in Canvas Tag</h2>
+          <div id="meta">3 Dec 18 | Author Payne | Article</div>
+          <canvas id="canvas2" class="canvas" width="200" height="200"></canvas>
+      </article>
+      <article>
+          <h2>Creating a Circle and Text in Canvas Tag</h2>
+          <div id="meta">3 Dec 18 | Author Payne | Article</div>
+          <canvas id="canvas3" class="canvas" width="200" height="200"></canvas>
+      </article>
+      <article>
+          <h2>Creating an Image in Canvas Tag</h2>
+          <div id="meta">3 Dec 18 | Author Payne | Article</div>
+          <img src="bkgd.jpg" id="canvas_img" style="display:none">
+          <canvas id="canvas5" class="canvas" width="200" height="200"></canvas>
+      </article>
+      <article>
+          <h2>Dialogue Tag</h2>
+          <div id="meta">3 Dec 18 | Author Payne | Article</div>
+          <figure>
+            <img src="bkgd.jpg" width=45%>
+            <figcaption>Figure 1.1</figcaption>
+          </figure>
+      </article>
+  </section>
+  <aside>
+    <div id="side-top">
+      <h1>latest posts</h1>
+      <div id="latest-posts-list">
+        <div class="latest-posts">First Post Title</div>
+        <div class="latest-posts">First Post Title</div>
+        <div class="latest-posts">First Post Title</div>
+        <div class="latest-posts">First Post Title</div>
+      </div>
+    </div>
+    <div id="side-bottom">
+      <h1>News Letter</h1>
+      <form>
+        <input type="email">
+        <input type="submit">
+      </form>
+    </div>
+  </aside>
+  <div style="clear:both"></div>
+  <footer>&copy; 2018 George Payne</footer>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+
+</html>
